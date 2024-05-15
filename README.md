@@ -3,7 +3,7 @@ Installation
 
 Der Go-Installer kann von der Offiziellen Download-Page https://www.go.dev/doc/install heruntelgeladen werden.
 Auf dieser Seite findet man auch die Installationsanleitungen für alle gängigen Betriebssysteme.
-Nach der Installation kann man die Version über den Terminal mittels: go version
+Nach der Installation kann man die Version über den Terminal mittels `go version` überprüfen.
 
 Go code schreiben
 ---
