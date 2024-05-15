@@ -54,7 +54,7 @@ Klarheit und Ausdruckskraft: Typnamen geben eine klare und eindeutige Identität
 Sicherheit: Die Typen sind explizit, was die Codeverständlichkeit und Fehlererkennung verbessert.
 Nachteile:
 Weniger Flexibilität: Zwei Typen mit identischer Struktur, aber unterschiedlichen Namen werden als unterschiedliche Typen betrachtet, was die Wiederverwendbarkeit beeinträchtigen kann.
-Boilerplate-Code: Bei ähnlichen Strukturen müssen separate Typen definiert werden, was zu wiederholtem Code führen kann.
+Boilerplate-Code: Bei ähnlichen Strukturen müssen separate Typen definiert werden, was zu wiederholtem Code führen kann.  
 Strukturelle Typisierung:
 
 Erklärung:
@@ -88,3 +88,15 @@ Effizienter Speicher: Slices nutzen weniger Speicher als Arrays und ermöglichen
 Nachteile:
 Verkettete Struktur: Die interne Struktur von Slices als Ansicht von Arrays kann zu Laufzeitkosten führen, insbesondere bei großen Datenmengen.
 Dynamische Größe: Die dynamische Größe von Slices kann zu häufigen Allokationen und Freigaben führen, was die Leistung beeinträchtigen kann.
+
+Goroutine  
+---
+tbd
+
+Channels & Select  
+---
+tbd
+
+Package Management
+---
+tbd
