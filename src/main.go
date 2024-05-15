@@ -4,6 +4,9 @@ import "fmt"
 
 func main() {
 
+	run()
+	return
+
 	fmt.Println("Defer")
 	defer_xmpl_1()
 	defer_xmpl_2()
