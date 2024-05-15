@@ -91,7 +91,8 @@ Dynamische Größe: Die dynamische Größe von Slices kann zu häufigen Allokati
 
 Goroutine  
 ---
-tbd
+Goroutinen sind leichtgewichtige Threads, die von der Go-Runtime verwaltet werden. Im Gegensatz zu herkömmlichen Threads sind Goroutinen nicht an Betriebssystemthreads gebunden, was bedeutet, dass Tausende von Goroutinen auf einem einzigen Betriebssystemthread laufen können. Dies ermöglicht es Go, große Mengen von gleichzeitigen Aufgaben effizient zu verarbeiten
+Goroutinen werden durch das Schlüsselwort "go" gestartet. Wenn Sie eine Funktion mit "go" aufrufen, wird sie als Goroutine ausgeführt. Goroutinen teilen sich den Adressraum derselben Anwendung und kommunizieren über Kanäle oder durch gemeinsam genutzte Speicherbereiche.  
 
 Channels & Select  
 ---
