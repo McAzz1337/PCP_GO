@@ -23,4 +23,12 @@ func main() {
 	fmt.Println("Slices")
 	slices_xample_1()
 	fmt.Println()
+
+	fmt.Println("Goroutine")
+	goroutine_xapmle_1()
+	fmt.Println()
+
+	fmt.Println("Channels")
+	channels_xapmle_1()
+	fmt.Println()
 }

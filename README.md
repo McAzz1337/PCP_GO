@@ -91,11 +91,12 @@ Dynamische Größe: Die dynamische Größe von Slices kann zu häufigen Allokati
 
 Goroutine  
 ---
-tbd
+Goroutinen sind leichtgewichtige Threads, die von der Go-Runtime verwaltet werden. Im Gegensatz zu herkömmlichen Threads sind Goroutinen nicht an Betriebssystemthreads gebunden, was bedeutet, dass Tausende von Goroutinen auf einem einzigen Betriebssystemthread laufen können. Dies ermöglicht es Go, große Mengen von gleichzeitigen Aufgaben effizient zu verarbeiten
+Goroutinen werden durch das Schlüsselwort "go" gestartet. Wenn Sie eine Funktion mit "go" aufrufen, wird sie als Goroutine ausgeführt. Goroutinen teilen sich den Adressraum derselben Anwendung und kommunizieren über Kanäle oder durch gemeinsam genutzte Speicherbereiche.  
 
 Channels & Select  
 ---
-tbd
+Channels ist eine Konstruktionsform, die es Goroutinen ermöglicht, sicher Daten miteinander auszutauschen und zu synchronisieren, ohne dass explizite Sperren oder Mutexe verwendet werden müssen. Ein Kanal ist ein typsicherer Datenstrom, der Daten zwischen Goroutinen überträgt. Kanäle sind asynchron, was bedeutet, dass Sender und Empfänger nicht gleichzeitig bereit sein müssen, um eine Nachricht zu senden oder zu empfangen. Wenn ein Sender eine Nachricht in einen Kanal schreibt, blockiert die Operation, bis ein Empfänger die Nachricht liest. Ebenso blockiert das Lesen aus einem Kanal, bis eine Nachricht verfügbar ist
 
 Package Management
 ---
