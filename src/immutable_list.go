@@ -52,7 +52,8 @@ func (Nil[T]) transform(f func(interface{}) interface{}) LList[T] {
 
 
 // Examples
-func run() {
+func cons() {
+
     // Create an empty list
     nilList := Nil[int]{}
     fmt.Println("Is nilList empty?", nilList.isEmpty())

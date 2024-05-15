@@ -40,7 +40,8 @@ func (n NegExpr) eval() int {
 	return -n.inner.eval()
 }
 
-func main() {
+func eval_expression() {
 	expr := PlusExpr{ConstantExpr{1}, TimesExpr{ConstantExpr{2}, ConstantExpr{3}}}
 	fmt.Println("Result of evaluating the expression:", expr.eval())
 }
+

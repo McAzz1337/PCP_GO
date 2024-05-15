@@ -4,8 +4,13 @@ import "fmt"
 
 func main() {
 
-	run()
-	return
+	fmt.Println("Cons")
+	cons()
+	fmt.Println()
+
+	fmt.Println("Eval expr")
+	eval_expression()
+	fmt.Println()
 
 	fmt.Println("Defer")
 	defer_xmpl_1()
@@ -22,5 +27,9 @@ func main() {
 
 	fmt.Println("Slices")
 	slices_xample_1()
+	fmt.Println()
+
+	fmt.Println("Fib")
+	fib()
 	fmt.Println()
 }
