@@ -4,6 +4,14 @@ import "fmt"
 
 func main() {
 
+	fmt.Println("Cons")
+	cons()
+	fmt.Println()
+
+	fmt.Println("Eval expr")
+	eval_expression()
+	fmt.Println()
+
 	fmt.Println("Defer")
 	defer_xmpl_1()
 	defer_xmpl_2()
@@ -21,12 +29,12 @@ func main() {
 	slices_xample_1()
 	fmt.Println()
 
-	fmt.Println("Goroutine")
-	goroutine_xapmle_1()
-	fmt.Println()
-
 	fmt.Println("Channels")
 	channels_xapmle_1()
+	fmt.Println()
+
+	fmt.Println("Fib")
+	fib()
 	fmt.Println()
 
 	var input int
