@@ -96,7 +96,7 @@ Goroutinen werden durch das Schlüsselwort "go" gestartet. Wenn Sie eine Funktio
 
 Channels & Select  
 ---
-tbd
+Channels ist eine Konstruktionsform, die es Goroutinen ermöglicht, sicher Daten miteinander auszutauschen und zu synchronisieren, ohne dass explizite Sperren oder Mutexe verwendet werden müssen. Ein Kanal ist ein typsicherer Datenstrom, der Daten zwischen Goroutinen überträgt. Kanäle sind asynchron, was bedeutet, dass Sender und Empfänger nicht gleichzeitig bereit sein müssen, um eine Nachricht zu senden oder zu empfangen. Wenn ein Sender eine Nachricht in einen Kanal schreibt, blockiert die Operation, bis ein Empfänger die Nachricht liest. Ebenso blockiert das Lesen aus einem Kanal, bis eine Nachricht verfügbar ist
 
 Package Management
 ---

@@ -24,4 +24,8 @@ func main() {
 	fmt.Println("Goroutine")
 	goroutine_xapmle_1()
 	fmt.Println()
+
+	fmt.Println("Channels")
+	channels_xapmle_1()
+	fmt.Println()
 }
