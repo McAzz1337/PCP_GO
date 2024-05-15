@@ -41,6 +41,10 @@ func main() {
 	fib()
 	fmt.Println()
 
+	fmt.Println("Parallel Streams solved with Goroutines")
+	parallel_Goroutines()
+	fmt.Println()
+
 	var input int
 	// Eingabeaufforderung
 	fmt.Print("Bereit für Select? (y)")
