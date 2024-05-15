@@ -68,7 +68,7 @@ Vermischung von Konzepten: Die Identität eines Typs kann weniger klar sein, da 
 
 Maps & Slices
 ---
-Maps:
+### Maps ###
 
 Erklärung:
 Maps sind eine eingebaute Datenstruktur in Go, die Schlüssel-Wert-Paare speichert. Sie ermöglichen den schnellen Zugriff auf Werte über einen eindeutigen Schlüssel.
@@ -78,7 +78,7 @@ Dynamische Größe: Maps sind dynamisch dimensioniert und können Elemente hinzu
 Nachteile:
 Ungeordnet: Die Reihenfolge der Elemente in einer Map ist nicht garantiert und kann variieren.
 Speicherbedarf: Maps benötigen mehr Speicher als Arrays oder Slices, was bei großen Datenmengen zu höherem Speicherverbrauch führen kann.
-Slices:
+### Slices ###
 
 Erklärung:
 Slices sind eine Ansicht von Arrays in Go, die eine flexible, dynamische Größe ermöglichen. Sie können Elemente hinzufügen, entfernen oder unterteilen.
@@ -96,6 +96,7 @@ Goroutinen werden durch das Schlüsselwort "go" gestartet. Wenn Sie eine Funktio
 
 Channels & Select  
 ---
+### Channels ###
 Channels ist eine Konstruktionsform, die es Goroutinen ermöglicht, sicher Daten miteinander auszutauschen und zu synchronisieren, ohne dass explizite Sperren oder Mutexe verwendet werden müssen. Ein Kanal ist ein typsicherer Datenstrom, der Daten zwischen Goroutinen überträgt. Kanäle sind asynchron, was bedeutet, dass Sender und Empfänger nicht gleichzeitig bereit sein müssen, um eine Nachricht zu senden oder zu empfangen. Wenn ein Sender eine Nachricht in einen Kanal schreibt, blockiert die Operation, bis ein Empfänger die Nachricht liest. Ebenso blockiert das Lesen aus einem Kanal, bis eine Nachricht verfügbar ist
 
 ### Select ###
