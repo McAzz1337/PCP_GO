@@ -42,3 +42,49 @@ passiert, oder im Falle eines panics, diese auch noch ausgeführt wird.
 Defer Funktioniert nach den LIFO-Prinzip, darum wird das letzte defer Statement als erstes ausgeführt. Durch dieses Prinzip kann man
 damit wie mit einem Stack umgehen.
 
+Structural and Nominal typing
+---
+
+Nominal-Typisierung:
+
+Erklärung:
+Nominal-Typisierung definiert Typen anhand ihrer Namen. Zwei Typen sind gleich, wenn ihre Namen übereinstimmen, unabhängig von ihrer Struktur.
+Vorteile:
+Klarheit und Ausdruckskraft: Typnamen geben eine klare und eindeutige Identität.
+Sicherheit: Die Typen sind explizit, was die Codeverständlichkeit und Fehlererkennung verbessert.
+Nachteile:
+Weniger Flexibilität: Zwei Typen mit identischer Struktur, aber unterschiedlichen Namen werden als unterschiedliche Typen betrachtet, was die Wiederverwendbarkeit beeinträchtigen kann.
+Boilerplate-Code: Bei ähnlichen Strukturen müssen separate Typen definiert werden, was zu wiederholtem Code führen kann.
+Strukturelle Typisierung:
+
+Erklärung:
+Strukturelle Typisierung definiert Typen anhand ihrer Struktur oder Form. Zwei Typen sind gleich, wenn ihre Strukturen übereinstimmen, unabhängig von ihren Namen.
+Vorteile:
+Flexibilität: Erlaubt die Verwendung von Typen mit ähnlichen Strukturen, ohne explizite Deklarationen.
+Wiederverwendbarkeit: Ermöglicht den Einsatz von Typen, die nicht explizit für eine Schnittstelle definiert wurden.
+Nachteile:
+Verdeckung: Kann zu unerwartetem Verhalten führen, wenn Typen unbeabsichtigt dieselbe Struktur haben.
+Vermischung von Konzepten: Die Identität eines Typs kann weniger klar sein, da sie von seiner Struktur und nicht von seinem Namen abhängt.
+
+Maps & Slices
+---
+Maps:
+
+Erklärung:
+Maps sind eine eingebaute Datenstruktur in Go, die Schlüssel-Wert-Paare speichert. Sie ermöglichen den schnellen Zugriff auf Werte über einen eindeutigen Schlüssel.
+Vorteile:
+Schneller Zugriff: Maps bieten eine schnelle Suche nach Werten anhand ihres Schlüssels.
+Dynamische Größe: Maps sind dynamisch dimensioniert und können Elemente hinzufügen oder entfernen, während das Programm läuft.
+Nachteile:
+Ungeordnet: Die Reihenfolge der Elemente in einer Map ist nicht garantiert und kann variieren.
+Speicherbedarf: Maps benötigen mehr Speicher als Arrays oder Slices, was bei großen Datenmengen zu höherem Speicherverbrauch führen kann.
+Slices:
+
+Erklärung:
+Slices sind eine Ansicht von Arrays in Go, die eine flexible, dynamische Größe ermöglichen. Sie können Elemente hinzufügen, entfernen oder unterteilen.
+Vorteile:
+Flexibel: Slices können leicht verändert werden, indem Elemente hinzugefügt, entfernt oder unterteilt werden.
+Effizienter Speicher: Slices nutzen weniger Speicher als Arrays und ermöglichen eine effiziente Verwaltung von Daten.
+Nachteile:
+Verkettete Struktur: Die interne Struktur von Slices als Ansicht von Arrays kann zu Laufzeitkosten führen, insbesondere bei großen Datenmengen.
+Dynamische Größe: Die dynamische Größe von Slices kann zu häufigen Allokationen und Freigaben führen, was die Leistung beeinträchtigen kann.
