@@ -29,6 +29,15 @@ func main() {
 	channels_xapmle_1()
 	fmt.Println()
 
+	var input int
+	// Eingabeaufforderung
+	fmt.Print("Bereit für Select? (y)")
+	// Eingabe lesen
+	_, err := fmt.Scan(&input)
+	if err != nil {
+		fmt.Print(err)
+	}
+
 	fmt.Println("Select")
 	select_xapmle_1()
 	fmt.Println()
