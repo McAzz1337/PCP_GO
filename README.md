@@ -98,6 +98,9 @@ Channels & Select
 ---
 Channels ist eine Konstruktionsform, die es Goroutinen ermöglicht, sicher Daten miteinander auszutauschen und zu synchronisieren, ohne dass explizite Sperren oder Mutexe verwendet werden müssen. Ein Kanal ist ein typsicherer Datenstrom, der Daten zwischen Goroutinen überträgt. Kanäle sind asynchron, was bedeutet, dass Sender und Empfänger nicht gleichzeitig bereit sein müssen, um eine Nachricht zu senden oder zu empfangen. Wenn ein Sender eine Nachricht in einen Kanal schreibt, blockiert die Operation, bis ein Empfänger die Nachricht liest. Ebenso blockiert das Lesen aus einem Kanal, bis eine Nachricht verfügbar ist
 
+### Select ###
+Das select-Statement in Go wird verwendet, um auf mehrere Kanäle gleichzeitig zu warten und die erste Operation auszuführen, die bereit ist. Es ist ähnlich wie ein Switch-Statement, aber speziell für Kanäle. Wenn nicht klar ist, welcher von mehreren Channel zuerst verfügbar sein wird (Daten enthält) kann Select verwendet werden, um auf das zu reagieren, was als nächstes verfügbar ist. Dies ist besonders nützlich, wenn Sie auf eingehende Daten von verschiedenen Goroutinen oder Quellen warten, und Sie möchten nicht blockieren, bis alle Kanäle Daten senden.
+
 Package Management
 ---
 tbd

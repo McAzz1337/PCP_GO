@@ -28,4 +28,8 @@ func main() {
 	fmt.Println("Channels")
 	channels_xapmle_1()
 	fmt.Println()
+
+	fmt.Println("Select")
+	select_xapmle_1()
+	fmt.Println()
 }
